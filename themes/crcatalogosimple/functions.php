@@ -133,11 +133,16 @@ function crcatalogosimple_scripts() {
 add_action( 'wp_enqueue_scripts', 'crcatalogosimple_scripts' );
 
 /*
-* Añade Descripciones cortas a WooCommerce (Plugin descripcion-corta-commerce)
+* Añade Descripciones cortas a WooCommerce (Plugin descripcion-corta-commerce) ###NOFUNCIONA
 */
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'conceptocommerce_extracto_archivos_producto', 40 );
 
+
+/*
+* Remueve boton ADD TO CART 
+*/
+ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
 
 /**
  * Implement the Custom Header feature.

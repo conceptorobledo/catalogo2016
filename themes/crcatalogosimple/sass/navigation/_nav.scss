@@ -7,6 +7,7 @@
 	display: block;
 	float: left;
 	width: 100%;
+	background-color:grey;
 }
 
 .main-navigation ul {
@@ -148,7 +149,7 @@
 		color:#fff;
 		font-size: 0.8em;
 		&:hover {
-					color:$color-kubico;
+
 		}
 	}
 }

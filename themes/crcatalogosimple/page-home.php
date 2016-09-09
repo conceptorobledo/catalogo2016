@@ -10,7 +10,7 @@ get_header(); ?>
 
 		<!-- <?php get_template_part('content','hero'); ?> -->
 		
-<section id="destacados">
+<section id="destacados" class="product-grid">
 	<div class="container">
 		<div class="row">
 		<h2 class="text-center"> Lo más destacado </h2>
