@@ -1,0 +1,33 @@
+
+#hero {
+	background:$dark-grey 40% 0 no-repeat fixed;
+	min-height:640px;
+	padding:40px 0;
+	color:$heroic-white;
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizelegibility;
+
+		
+		
+
+	.hero-text {
+		margin-top:14%;
+		text-align:center;
+
+		h1 {
+			font-size:4em;
+			margin-bottom: 10px;
+			z-index: 5; //Se aplica z-index para qué el overlay no cubra textos
+		}
+
+		.lead {
+			margin-bottom: 46px;
+		}
+	}
+	div.hr {
+		display: inline-block;
+    	width: 200px;
+    	border-bottom:2px solid $heroic-white; 
+    	margin-bottom:6px;
+	}
+}

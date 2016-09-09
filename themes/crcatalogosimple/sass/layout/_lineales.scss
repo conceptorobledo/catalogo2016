@@ -1,0 +1,66 @@
+#columnas-valor {
+	background-color: $blanco-oscuro;
+	color:$negro;
+	padding-top:45px;
+	padding-bottom:25px;
+	
+
+	p {
+		min-height: 65px;
+		@media only screen and (max-width:$pantalla-media) {
+			min-height:30px;
+		}
+	}
+
+	img {
+		max-width:120px;
+	
+		display:block;
+		text-align:center;
+		margin: 0 auto;
+		
+		margin-bottom:45px;
+		
+			
+		
+	}
+
+}
+
+#lineal-nosotros {
+	padding-top:95px;
+	padding-bottom:95px;
+	background:white url('assets/img/people-tablets.png') 10% 52%  no-repeat;
+	background-size: 45%;
+	
+	@media screen and (max-width:$pantalla-media) {
+		
+		background:white url('assets/img/people-tablets.png') 40% 52%  no-repeat;
+		background-size: 60%;
+		padding: 85px 0;	
+		@include color-overlay(rgba(255,255,255,0.7),'assets/img/people-tablets.png');
+
+	}
+
+	li {
+		margin-top:10px;
+		margin-bottom:15px;
+	}
+
+	i {
+		font-size:20px;
+		margin-top:-2px;
+	}
+
+}
+
+#featurette {
+		background:$blanco-oscuro url('assets/img/video-bg.jpg') 40% 0  no-repeat;
+		padding: 40px 0;
+		text-align: center;
+		color: white;
+		iframe {
+			margin:20px 0;
+		}
+}
+
