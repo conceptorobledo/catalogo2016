@@ -30,6 +30,7 @@ h1,h2 {
 
 h2 {
 	margin-bottom: 15px;
+	font-weight: 300;
 	@media only screen and (max-width:$pantalla-cel) {
 			margin-bottom:10px;
 		}

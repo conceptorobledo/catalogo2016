@@ -7,7 +7,6 @@
 	display: block;
 	float: left;
 	width: 100%;
-	background-color:grey;
 }
 
 .main-navigation ul {
@@ -140,17 +139,27 @@
 	}
 }
 
-.navbar-inverse{
-	background-color: rgba(0,0,0,0);
+.main-navigation{
+	.navbar-inverse{
+		background-color: rgba(0,0,0,0);
 
-	.navbar-nav>li>a {
-		font-family: $font-header;
-		text-transform: uppercase;
-		color:#fff;
-		font-size: 0.8em;
-		&:hover {
+		.navbar-nav>li{
 
+
+				&>a {
+					font-family: $font-header;
+					text-transform: uppercase;
+					color: $celeste-financoop;
+					font-size: 0.8em;
+					&:hover {
+						
+
+						@include transition(0.5s);
+						background-color:$celeste-financoop;
+						color:$heroic-white;
+
+						}
+					}
 		}
 	}
 }
-

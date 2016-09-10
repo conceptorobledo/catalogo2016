@@ -3555,7 +3555,7 @@
 
 /* line 1, sass/base/_globals.scss */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 
@@ -3569,7 +3569,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   font-weight: bold;
-  font-family: "Muli", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 /* line 21, sass/base/_globals.scss */
@@ -3587,6 +3587,7 @@ h1, h2 {
 /* line 31, sass/base/_globals.scss */
 h2 {
   margin-bottom: 15px;
+  font-weight: 300;
 }
 @media only screen and (max-width: 360px) {
   /* line 31, sass/base/_globals.scss */
@@ -3595,72 +3596,72 @@ h2 {
   }
 }
 
-/* line 38, sass/base/_globals.scss */
+/* line 39, sass/base/_globals.scss */
 h3 {
   margin: 20px 0;
 }
 
-/* line 44, sass/base/_globals.scss */
+/* line 45, sass/base/_globals.scss */
 h4 {
   font-size: 18px;
 }
 
-/* line 48, sass/base/_globals.scss */
+/* line 49, sass/base/_globals.scss */
 p {
   margin: 0 0 15px;
 }
-/* line 50, sass/base/_globals.scss */
+/* line 51, sass/base/_globals.scss */
 p .lead {
   font-weight: normal;
 }
 
-/* line 60, sass/base/_globals.scss */
+/* line 61, sass/base/_globals.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 66, sass/base/_globals.scss */
+/* line 67, sass/base/_globals.scss */
 button, input, .btn, a.btn {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
   color: white;
 }
 
-/* line 74, sass/base/_globals.scss */
+/* line 75, sass/base/_globals.scss */
 img {
   max-width: 100%;
 }
 
-/* line 78, sass/base/_globals.scss */
+/* line 79, sass/base/_globals.scss */
 li {
   list-style: none;
   display: block;
 }
 
-/* line 83, sass/base/_globals.scss */
+/* line 84, sass/base/_globals.scss */
 .section-header {
   text-align: center;
 }
 
-/* line 88, sass/base/_globals.scss */
+/* line 89, sass/base/_globals.scss */
 .navbar-brand {
   padding: 5px 5px;
 }
-/* line 90, sass/base/_globals.scss */
+/* line 91, sass/base/_globals.scss */
 .navbar-brand img {
   max-width: 200px;
 }
 
-/* line 97, sass/base/_globals.scss */
+/* line 98, sass/base/_globals.scss */
 .valign-wrapper {
   margin: 40px 0;
 }
 @media (min-width: 768px) {
-  /* line 97, sass/base/_globals.scss */
+  /* line 98, sass/base/_globals.scss */
   .valign-wrapper {
     height: 400px;
   }
-  /* line 103, sass/base/_globals.scss */
+  /* line 104, sass/base/_globals.scss */
   .valign-wrapper .valign {
     position: absolute;
     top: 8%;
@@ -3668,32 +3669,9 @@ li {
 }
 
 /* line 1, sass/components/_buttons.scss */
-.hero-btn {
-  display: inline-block;
-  padding: .938em 1.875em;
-  border: 0.094em solid white;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  font: bold 1.8rem sans-serif;
-  -webkit-box-shadow: 9px 11px 28px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 9px 11px 28px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 9px 11px 28px -9px rgba(0, 0, 0, 0.75);
-}
-/* line 14, sass/components/_buttons.scss */
-.hero-btn:hover {
-  background-color: white;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  color: rgba(0, 0, 0, 0.62);
-}
-/* line 24, sass/components/_buttons.scss */
-.hero-btn:active {
-  box-shadow: inset 0 0 1.094em #472566, inset 0 0.063em #390668, inset 0 -0.188em #682CA0, 0 0.063em rgba(255, 255, 255, 0.4);
+.btn-primary {
+  background-color: #E15E29;
+  border-color: #E15E29;
 }
 
 /*--------------------------------------------------------------
@@ -3705,10 +3683,9 @@ li {
   display: block;
   float: left;
   width: 100%;
-  background-color: grey;
 }
 
-/* line 13, sass/navigation/_nav.scss */
+/* line 12, sass/navigation/_nav.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -3716,19 +3693,19 @@ li {
   padding-left: 0;
 }
 
-/* line 20, sass/navigation/_nav.scss */
+/* line 19, sass/navigation/_nav.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
 
-/* line 25, sass/navigation/_nav.scss */
+/* line 24, sass/navigation/_nav.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* line 30, sass/navigation/_nav.scss */
+/* line 29, sass/navigation/_nav.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -3738,48 +3715,48 @@ li {
   z-index: 99999;
 }
 
-/* line 39, sass/navigation/_nav.scss */
+/* line 38, sass/navigation/_nav.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 44, sass/navigation/_nav.scss */
+/* line 43, sass/navigation/_nav.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 64, sass/navigation/_nav.scss */
+/* line 63, sass/navigation/_nav.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 69, sass/navigation/_nav.scss */
+/* line 68, sass/navigation/_nav.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
 /* Small menu. */
-/* line 81, sass/navigation/_nav.scss */
+/* line 80, sass/navigation/_nav.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 87, sass/navigation/_nav.scss */
+  /* line 86, sass/navigation/_nav.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 90, sass/navigation/_nav.scss */
+  /* line 89, sass/navigation/_nav.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 95, sass/navigation/_nav.scss */
+/* line 94, sass/navigation/_nav.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -3787,7 +3764,7 @@ li {
   overflow: hidden;
 }
 
-/* line 102, sass/navigation/_nav.scss */
+/* line 101, sass/navigation/_nav.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -3795,7 +3772,7 @@ li {
   width: 50%;
 }
 
-/* line 109, sass/navigation/_nav.scss */
+/* line 108, sass/navigation/_nav.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3804,45 +3781,98 @@ li {
   width: 50%;
 }
 
-/* line 120, sass/navigation/_nav.scss */
+/* line 119, sass/navigation/_nav.scss */
 .navbar {
   z-index: 50;
   border: 0;
   min-height: 90px;
 }
-/* line 126, sass/navigation/_nav.scss */
+/* line 125, sass/navigation/_nav.scss */
 .navbar-toggle {
   border: 0;
 }
-/* line 128, sass/navigation/_nav.scss */
+/* line 127, sass/navigation/_nav.scss */
 .navbar-toggle.icon-bar {
   width: 34px;
   height: 4px;
 }
-/* line 136, sass/navigation/_nav.scss */
+/* line 135, sass/navigation/_nav.scss */
 .navbar > .container {
   padding-top: 20px;
 }
 
 /* line 143, sass/navigation/_nav.scss */
-.navbar-inverse {
+.main-navigation .navbar-inverse {
   background-color: transparent;
 }
-/* line 146, sass/navigation/_nav.scss */
-.navbar-inverse .navbar-nav > li > a {
-  font-family: "Muli", sans-serif;
+/* line 149, sass/navigation/_nav.scss */
+.main-navigation .navbar-inverse .navbar-nav > li > a {
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #fff;
+  color: #0099A7;
   font-size: 0.8em;
 }
+/* line 154, sass/navigation/_nav.scss */
+.main-navigation .navbar-inverse .navbar-nav > li > a:hover {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0099A7;
+  color: white;
+}
 
+/* line 1, sass/layout/_header.scss */
+header {
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+
+/* line 1, sass/layout/_footer.scss */
+footer {
+  margin-top: 60px;
+  background-color: #434343;
+}
+/* line 5, sass/layout/_footer.scss */
+footer a, footer p {
+  color: white;
+}
+
+/* line 2, sass/layout/_general.scss */
+.site-content h1 {
+  font-size: 25px;
+}
+/* line 6, sass/layout/_general.scss */
+.site-content h2 {
+  text-transform: uppercase;
+}
+
+/* line 1, sass/layout/_product-grid.scss */
+.product-grid {
+  margin-top: 68px;
+}
 /* line 2, sass/layout/_product-grid.scss */
 .product-grid h3 {
   font-size: 14px;
+  min-height: 20px;
 }
-/* line 8, sass/layout/_product-grid.scss */
-.product-grid p .price {
+/* line 9, sass/layout/_product-grid.scss */
+.product-grid p.price {
   font-size: 12px;
+}
+/* line 18, sass/layout/_product-grid.scss */
+.product-grid .wrapper {
+  min-height: 140px;
+}
+/* line 22, sass/layout/_product-grid.scss */
+.product-grid .item {
+  margin-top: 25px;
+}
+
+/* line 27, sass/layout/_product-grid.scss */
+.woocommerce ul.products li.product h3 {
+  font-size: 14px;
 }
 
 /* line 4, sass/pages/_contacto.scss */

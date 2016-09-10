@@ -13,6 +13,7 @@
     background-image: -webkit-linear-gradient(top, $rgba, $rgba), url($url);
 }
 
+//Transiciónes | Duración ej. 0.6s
 @mixin transition($duration) {
     -webkit-transition: $duration;
     -moz-transition: $duration;

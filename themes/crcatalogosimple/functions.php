@@ -116,13 +116,15 @@ add_action( 'widgets_init', 'crcatalogosimple_widgets_init' );
  */
 function crcatalogosimple_scripts() {
 
-		wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap.min.css','3.3.7');
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/bootstrap.min.css','3.3.7');
 
 	wp_enqueue_style( 'crcatalogosimple-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'crcatalogosimple-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '3.3.7', true );
+
+	wp_enqueue_style('googlefont_css', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 	wp_enqueue_script( 'crcatalogosimple-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -131,6 +133,7 @@ function crcatalogosimple_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'crcatalogosimple_scripts' );
+
 
 /*
 * Añade Descripciones cortas a WooCommerce (Plugin descripcion-corta-commerce) ###NOFUNCIONA

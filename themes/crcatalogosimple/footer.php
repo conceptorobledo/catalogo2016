@@ -13,21 +13,28 @@
 
 	</div><!-- #content -->
 
-	<div class="container">
 		<footer id="colophon" class="site-footer" role="contentinfo">
-			<p class="footer-links">
-										<?php 
-												wp_nav_menu( array(
+			<div class="container">
 
-													'theme_location' => 'footer-menu',
-												) );
-										?>
-										</p>
+				<div class="roW">
+					<?php 
+							wp_nav_menu( array(
 
-										<p class="footer-company-name">Financoop &copy; <?php echo date('Y'); ?></p>
-	</footer><!-- #colophon -->
-	</div><!-- #page -->
-	</div><!-- container -->
+								'theme_location' => 'footer-menu',
+								'container' => 'nav',
+								'container_Class' => 'navbar-collapse collapse',
+								'menu_class' => 'nav navbar-nav'
+							) );
+					?>
+					<div class="col-md-12">
+						<p class="footer-company-name">Financoop &copy; <?php echo date('Y'); ?></p>
+					</div>
+				</div><!--#col-->
+			
+			</div><!-- #page -->
+			</div><!-- container -->
+		</footer><!-- #colophon -->
+
 
 <?php wp_footer(); ?>
 

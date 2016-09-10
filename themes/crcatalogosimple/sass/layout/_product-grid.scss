@@ -1,12 +1,29 @@
 .product-grid {
 	h3 {
 		font-size: 14px;
+		min-height: 20px;
 	}
 
 	p {
 
-		.price {
+		&.price {
 			font-size:12px;
 		}
 	}
+
+
+
+	margin-top: 68px;
+
+	.wrapper {
+		min-height: 140px;
+	}
+
+	.item {
+		margin-top:25px;
+	}
+}
+
+.woocommerce ul.products li.product h3 {
+	font-size:14px;
 }
