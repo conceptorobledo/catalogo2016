@@ -13,7 +13,7 @@ get_header(); ?>
 <section id="destacados" class="product-grid">
 	<div class="container">
 		<div class="row">
-		<h1> Catalogo Financoop</h1>
+		<h1> Catalogo </h1>
 			<h2 class="text-center"> Lo más destacado </h2>
 				
 

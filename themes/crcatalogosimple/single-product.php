@@ -35,6 +35,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
+</div><!-- #container -->
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -52,7 +53,7 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-</div><!-- #container -->
+
 
 
 <?php get_footer( 'shop' ); ?>
