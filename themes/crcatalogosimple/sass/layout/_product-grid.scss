@@ -1,13 +1,18 @@
 .product-grid {
 	h3 {
 		font-size: 14px;
-		min-height: 20px;
+		min-height: 28px;
+		margin: 20px 0 10px 0;
 	}
 
 	p {
 
 		&.price {
 			font-size:12px;
+
+			.referencial {
+				font-size:10px;
+			}
 		}
 	}
 
@@ -16,7 +21,7 @@
 	margin-top: 68px;
 
 	.wrapper {
-		min-height: 140px;
+		min-height: 220px;
 	}
 
 	.item {

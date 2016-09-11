@@ -1,4 +1,21 @@
 header {
 	border-bottom: 1px solid $gris-claro;
 	margin-bottom: 20px;
+
+	.top {
+		color:$heroic-white;
+		background-color:$naranjo-financoop;
+		height:35px;
+		p {
+			text-transform: uppercase;
+			padding: 6px 0;
+		}
+
+		a{
+			&,&:hover,&:active,&:focus {
+				color:$heroic-white;
+				text-decoration: none;
+			}
+		}
+	}
 }

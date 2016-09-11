@@ -23,6 +23,19 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
+	<div class="top">
+		<div class="container">
+			<div class="row">
+					<div class="col-md-6">
+						<p>envio gratuito en <b>todos</b> nuestros productos</p>
+					</div><!--#col-->
+					<div class="col-md-6">
+						<p class="pull-right">Contáctanos: <a href="tel:+56228975400">(+562) 2 897 5400</a></p>
+					</div><!--#col-->
+				</div><!-- #row-->
+		</div><!--#container-->
+	</div><!--#top-->
+	
 	<div class="container">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 		

@@ -13,6 +13,7 @@ get_header(); ?>
 <section id="destacados" class="product-grid">
 	<div class="container">
 		<div class="row">
+		<h1> Catalogo Financoop</h1>
 			<h2 class="text-center"> Lo más destacado </h2>
 				
 
@@ -36,7 +37,10 @@ get_header(); ?>
 		    $loop = new WP_Query( $args );
 		    while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
 
-		        <div class="col-md-3 col-sm-6 item">   
+		        <div class="col-md-3 col-sm-6 item">  
+
+		       		<div class="wrapper">
+ 
 		            <?php 
 		                if ( has_post_thumbnail( $loop->post->ID ) ) 
 		                    echo get_the_post_thumbnail( $loop->post->ID, 'shop_catalog' ); 
@@ -45,13 +49,18 @@ get_header(); ?>
 		            ?>
 		            <h3><?php the_title(); ?></h3>
 
-		                     <p class="price"><?php echo $product->get_price_html(); ?></p>
+		                     <p class="price"><?php echo $product->get_price_html(); ?>  </br> <span class="referencial">Precio Referencial</span> </p>
 	          	
 		            <?php 
 		                //echo $product->get_price_html(); 
 		                // woocommerce_template_loop_add_to_cart( $loop->post, $product );
 		            ?>    
+
+		            </div>
+
 		             <a href="<?php echo  get_the_permalink(); ?>" class="btn btn-primary">Más Información</a>
+
+		 
 		        </div>
 
 
@@ -85,7 +94,7 @@ get_header(); ?>
 
 		                            <h3><?php the_title(); ?></h3>
 
-		                        	   <p class="price"><?php echo $product->get_price_html(); ?> </br> Precio Referencial</p>
+		                        	   <p class="price"><?php echo $product->get_price_html(); ?> </br> <span class="referencial">Precio Referencial</span></p>
 
 
 

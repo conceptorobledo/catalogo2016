@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/**
+Theme Name: ConceptoRobledo Catalogo Simple
+Theme Description: Catalogo Sencillo sin carro de compras.
+*/
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3694,18 +3698,12 @@ li {
 }
 
 /* line 19, sass/navigation/_nav.scss */
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-
-/* line 24, sass/navigation/_nav.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* line 29, sass/navigation/_nav.scss */
+/* line 24, sass/navigation/_nav.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -3715,48 +3713,48 @@ li {
   z-index: 99999;
 }
 
-/* line 38, sass/navigation/_nav.scss */
+/* line 33, sass/navigation/_nav.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 43, sass/navigation/_nav.scss */
+/* line 38, sass/navigation/_nav.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
 
-/* line 63, sass/navigation/_nav.scss */
+/* line 58, sass/navigation/_nav.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 68, sass/navigation/_nav.scss */
+/* line 63, sass/navigation/_nav.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
 /* Small menu. */
-/* line 80, sass/navigation/_nav.scss */
+/* line 75, sass/navigation/_nav.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 86, sass/navigation/_nav.scss */
+  /* line 81, sass/navigation/_nav.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 89, sass/navigation/_nav.scss */
+  /* line 84, sass/navigation/_nav.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 94, sass/navigation/_nav.scss */
+/* line 89, sass/navigation/_nav.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -3764,7 +3762,7 @@ li {
   overflow: hidden;
 }
 
-/* line 101, sass/navigation/_nav.scss */
+/* line 96, sass/navigation/_nav.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -3772,7 +3770,7 @@ li {
   width: 50%;
 }
 
-/* line 108, sass/navigation/_nav.scss */
+/* line 103, sass/navigation/_nav.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3781,38 +3779,33 @@ li {
   width: 50%;
 }
 
-/* line 119, sass/navigation/_nav.scss */
+/* line 114, sass/navigation/_nav.scss */
 .navbar {
   z-index: 50;
   border: 0;
   min-height: 90px;
 }
-/* line 125, sass/navigation/_nav.scss */
+/* line 120, sass/navigation/_nav.scss */
 .navbar-toggle {
   border: 0;
 }
-/* line 127, sass/navigation/_nav.scss */
-.navbar-toggle.icon-bar {
-  width: 34px;
-  height: 4px;
-}
-/* line 135, sass/navigation/_nav.scss */
+/* line 129, sass/navigation/_nav.scss */
 .navbar > .container {
   padding-top: 20px;
 }
 
-/* line 143, sass/navigation/_nav.scss */
+/* line 137, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse {
   background-color: transparent;
 }
-/* line 149, sass/navigation/_nav.scss */
+/* line 143, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #0099A7;
   font-size: 0.8em;
 }
-/* line 154, sass/navigation/_nav.scss */
+/* line 148, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a:hover {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -3822,11 +3815,45 @@ li {
   background-color: #0099A7;
   color: white;
 }
+/* line 164, sass/navigation/_nav.scss */
+.main-navigation .navbar-toggle .icon-bar {
+  width: 42px;
+  height: 8px;
+  background-color: #0099A7;
+}
+/* line 170, sass/navigation/_nav.scss */
+.main-navigation .navbar-toggle:hover {
+  background-color: transparent;
+}
+/* line 174, sass/navigation/_nav.scss */
+.main-navigation .navbar-toggle:active, .main-navigation .navbar-toggle:focus {
+  background-color: transparent;
+}
+/* line 178, sass/navigation/_nav.scss */
+.main-navigation .navbar-toggle:active .icon-bar, .main-navigation .navbar-toggle:focus .icon-bar {
+  background-color: #E15E29;
+}
 
 /* line 1, sass/layout/_header.scss */
 header {
   border-bottom: 1px solid #E9E9E9;
   margin-bottom: 20px;
+}
+/* line 5, sass/layout/_header.scss */
+header .top {
+  color: white;
+  background-color: #E15E29;
+  height: 35px;
+}
+/* line 9, sass/layout/_header.scss */
+header .top p {
+  text-transform: uppercase;
+  padding: 6px 0;
+}
+/* line 15, sass/layout/_header.scss */
+header .top a, header .top a:hover, header .top a:active, header .top a:focus {
+  color: white;
+  text-decoration: none;
 }
 
 /* line 1, sass/layout/_footer.scss */
@@ -3837,6 +3864,16 @@ footer {
 /* line 5, sass/layout/_footer.scss */
 footer a, footer p {
   color: white;
+}
+/* line 9, sass/layout/_footer.scss */
+footer #menu-footer-menu {
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  /* line 14, sass/layout/_footer.scss */
+  footer .nav > li > a:hover {
+    background-color: transparent;
+  }
 }
 
 /* line 2, sass/layout/_general.scss */
@@ -3855,22 +3892,27 @@ footer a, footer p {
 /* line 2, sass/layout/_product-grid.scss */
 .product-grid h3 {
   font-size: 14px;
-  min-height: 20px;
+  min-height: 28px;
+  margin: 20px 0 10px 0;
 }
-/* line 9, sass/layout/_product-grid.scss */
+/* line 10, sass/layout/_product-grid.scss */
 .product-grid p.price {
   font-size: 12px;
 }
-/* line 18, sass/layout/_product-grid.scss */
-.product-grid .wrapper {
-  min-height: 140px;
+/* line 13, sass/layout/_product-grid.scss */
+.product-grid p.price .referencial {
+  font-size: 10px;
 }
-/* line 22, sass/layout/_product-grid.scss */
+/* line 23, sass/layout/_product-grid.scss */
+.product-grid .wrapper {
+  min-height: 220px;
+}
+/* line 27, sass/layout/_product-grid.scss */
 .product-grid .item {
   margin-top: 25px;
 }
 
-/* line 27, sass/layout/_product-grid.scss */
+/* line 32, sass/layout/_product-grid.scss */
 .woocommerce ul.products li.product h3 {
   font-size: 14px;
 }
@@ -3908,4 +3950,18 @@ footer a, footer p {
 /* line 33, sass/pages/_contacto.scss */
 .page-template-page-contacto {
   background-color: #222222;
+}
+
+/* line 2, sass/pages/_inicio.scss */
+.home h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #E15E29;
+  margin: 5px 5px 15px 5px;
+}
+@media (min-width: 768px) {
+  /* line 2, sass/pages/_inicio.scss */
+  .home h1 {
+    margin-bottom: 45px;
+  }
 }

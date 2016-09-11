@@ -16,11 +16,6 @@
 	padding-left: 0;
 }
 
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -125,8 +120,7 @@
 	&-toggle {
 		border: 0;
 		&.icon-bar {
-			width:34px;
-			height:4px;
+			
 		}
 	}
 
@@ -162,4 +156,29 @@
 					}
 		}
 	}
+
+	.navbar-toggle {
+
+
+
+		.icon-bar {
+		width:42px;
+		height:8px;	
+		background-color:$celeste-financoop;
+		}
+
+		&:hover {
+			background-color:rgba(0,0,0,0);
+		}
+
+		&:active,&:focus {
+
+			background-color:rgba(0,0,0,0);
+
+			.icon-bar {
+				background-color:$naranjo-financoop;
+			}
+		}
+	}
+
 }
