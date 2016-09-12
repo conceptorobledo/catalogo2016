@@ -1,4 +1,8 @@
 .btn-primary {
    background-color: $naranjo-financoop;
    border-color: $naranjo-financoop;
+
+   &:hover {
+   	border-color:rgba(0,0,0,0);
+   }
 }

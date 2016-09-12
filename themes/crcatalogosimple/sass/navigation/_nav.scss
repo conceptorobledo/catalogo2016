@@ -7,7 +7,11 @@
 	display: block;
 	float: left;
 	width: 100%;
+	border-bottom: 1px solid $gris-claro;
+	margin-bottom:15px;
 }
+
+
 
 .main-navigation ul {
 	display: none;
@@ -21,13 +25,35 @@
 	text-decoration: none;
 }
 
+
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
+	margin-top:10px;
+	text-aling:center;
+	top: 2.8em;
 	left: -999em;
 	z-index: 99999;
+	background: white;
+	border-right:none !important;
+	font-size:0.8em;
+
+	.menu-item {
+	min-width:100px;
+	padding: 8px;
+	a {
+	color:grey;
+	text-decoration:none;
+	}
+}
+.menu-item:hover {
+	background-color: $celeste-financoop;
+		a {
+	color:white;
+	}
+}
+
 }
 
 .main-navigation ul ul ul {
@@ -36,7 +62,7 @@
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	min-width: 170px;
 }
 
 
@@ -50,11 +76,6 @@
 	left: 100%;
 }
 
-.main-navigation .current_page_item > a,
-.main-navigation .current-menu-item > a,
-.main-navigation .current_page_ancestor > a,
-.main-navigation .current-menu-ancestor > a {
-}
 
 /* Small menu. */
 .menu-toggle,

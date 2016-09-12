@@ -41,7 +41,7 @@ $woocommerce_loop['columns'] = apply_filters( 'woocommerce_related_products_colu
 if ( $products->have_posts() ) : ?>
 
 
-	<section class="related products">
+	<section class="product-grid">
 					<div class="row">
 
 						<h2><?php esc_html_e( 'Related Products', 'woocommerce' ); ?></h2>

@@ -1,12 +1,24 @@
+
+//arreglar, hard style
+.referencial {
+	font-size:14px;
+}
+//
+
 .product-grid {
+
+
 	h3 {
 		font-size: 14px;
 		min-height: 28px;
 		margin: 20px 0 10px 0;
+		color:$black;
 	}
 
 	p {
 
+		
+		color:$black;
 		&.price {
 			font-size:12px;
 
@@ -25,6 +37,8 @@
 
 	.item {
 		margin-top:25px;
+			height: 503px;
+
 	}
 }
 
@@ -34,41 +48,7 @@
 
 //PROVISIONAL, ARREGLAR WOOCOMMERCE
 
-.products {
-	
-
-	p {
-
-		&.price {
-			font-size:12px;
-
-			.referencial {
-				font-size:10px;
-			}
-		}
-	}
-
-
-
-
-	.wrapper {
-		min-height: 220px;
-
-		h3 {
-		font-size: 14px;
-		min-height: 28px;
-		margin: 20px 0 10px 0;
-		color:black;
-		}
-	}
-
-	.item {
-		margin-top:25px;
-	}
-	a,a:hover,a:focus,a:active {
-		p,h3 {
-			color:black;
-		}
-	}
+#related .price {
+	color:$black;
+	font-size:12px;
 }
-

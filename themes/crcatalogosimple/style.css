@@ -3651,27 +3651,29 @@ li {
 .navbar-brand {
   padding: 5px 5px;
 }
-/* line 91, sass/base/_globals.scss */
+/* line 92, sass/base/_globals.scss */
 .navbar-brand img {
   max-width: 150px;
 }
 @media (min-width: 768px) {
-  /* line 91, sass/base/_globals.scss */
+  /* line 92, sass/base/_globals.scss */
   .navbar-brand img {
     max-width: 200px;
+    position: relative;
+    top: -10px;
   }
 }
 
-/* line 103, sass/base/_globals.scss */
+/* line 106, sass/base/_globals.scss */
 .valign-wrapper {
   margin: 40px 0;
 }
 @media (min-width: 768px) {
-  /* line 103, sass/base/_globals.scss */
+  /* line 106, sass/base/_globals.scss */
   .valign-wrapper {
     height: 400px;
   }
-  /* line 109, sass/base/_globals.scss */
+  /* line 112, sass/base/_globals.scss */
   .valign-wrapper .valign {
     position: absolute;
     top: 8%;
@@ -3683,6 +3685,10 @@ li {
   background-color: #E15E29;
   border-color: #E15E29;
 }
+/* line 5, sass/components/_buttons.scss */
+.btn-primary:hover {
+  border-color: transparent;
+}
 
 /*--------------------------------------------------------------
 ## Menus
@@ -3693,9 +3699,11 @@ li {
   display: block;
   float: left;
   width: 100%;
+  border-bottom: 1px solid #E9E9E9;
+  margin-bottom: 15px;
 }
 
-/* line 12, sass/navigation/_nav.scss */
+/* line 16, sass/navigation/_nav.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -3703,64 +3711,87 @@ li {
   padding-left: 0;
 }
 
-/* line 19, sass/navigation/_nav.scss */
+/* line 23, sass/navigation/_nav.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
-/* line 24, sass/navigation/_nav.scss */
+/* line 29, sass/navigation/_nav.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
-  top: 1.5em;
+  margin-top: 10px;
+  text-aling: center;
+  top: 2.8em;
   left: -999em;
   z-index: 99999;
+  background: white;
+  border-right: none !important;
+  font-size: 0.8em;
+}
+/* line 42, sass/navigation/_nav.scss */
+.main-navigation ul ul .menu-item {
+  min-width: 100px;
+  padding: 8px;
+}
+/* line 45, sass/navigation/_nav.scss */
+.main-navigation ul ul .menu-item a {
+  color: grey;
+  text-decoration: none;
+}
+/* line 50, sass/navigation/_nav.scss */
+.main-navigation ul ul .menu-item:hover {
+  background-color: #0099A7;
+}
+/* line 52, sass/navigation/_nav.scss */
+.main-navigation ul ul .menu-item:hover a {
+  color: white;
 }
 
-/* line 33, sass/navigation/_nav.scss */
+/* line 59, sass/navigation/_nav.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
 
-/* line 38, sass/navigation/_nav.scss */
+/* line 64, sass/navigation/_nav.scss */
 .main-navigation ul ul a {
-  width: 200px;
+  min-width: 170px;
 }
 
-/* line 43, sass/navigation/_nav.scss */
+/* line 69, sass/navigation/_nav.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 48, sass/navigation/_nav.scss */
+/* line 74, sass/navigation/_nav.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
 /* Small menu. */
-/* line 60, sass/navigation/_nav.scss */
+/* line 81, sass/navigation/_nav.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 66, sass/navigation/_nav.scss */
+  /* line 87, sass/navigation/_nav.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 69, sass/navigation/_nav.scss */
+  /* line 90, sass/navigation/_nav.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 74, sass/navigation/_nav.scss */
+/* line 95, sass/navigation/_nav.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -3768,7 +3799,7 @@ li {
   overflow: hidden;
 }
 
-/* line 81, sass/navigation/_nav.scss */
+/* line 102, sass/navigation/_nav.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -3776,7 +3807,7 @@ li {
   width: 50%;
 }
 
-/* line 88, sass/navigation/_nav.scss */
+/* line 109, sass/navigation/_nav.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3785,33 +3816,33 @@ li {
   width: 50%;
 }
 
-/* line 99, sass/navigation/_nav.scss */
+/* line 120, sass/navigation/_nav.scss */
 .navbar {
   z-index: 50;
   border: 0;
   min-height: 90px;
 }
-/* line 105, sass/navigation/_nav.scss */
+/* line 126, sass/navigation/_nav.scss */
 .navbar-toggle {
   border: 0;
 }
-/* line 114, sass/navigation/_nav.scss */
+/* line 135, sass/navigation/_nav.scss */
 .navbar > .container {
   padding-top: 20px;
 }
 
-/* line 122, sass/navigation/_nav.scss */
+/* line 143, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse {
   background-color: transparent;
 }
-/* line 128, sass/navigation/_nav.scss */
+/* line 149, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #0099A7;
   font-size: 0.8em;
 }
-/* line 133, sass/navigation/_nav.scss */
+/* line 154, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a:hover {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -3821,21 +3852,21 @@ li {
   background-color: #0099A7;
   color: white;
 }
-/* line 149, sass/navigation/_nav.scss */
+/* line 170, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle .icon-bar {
   width: 42px;
   height: 8px;
   background-color: #0099A7;
 }
-/* line 155, sass/navigation/_nav.scss */
+/* line 176, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:hover {
   background-color: transparent;
 }
-/* line 159, sass/navigation/_nav.scss */
+/* line 180, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:active, .main-navigation .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 163, sass/navigation/_nav.scss */
+/* line 184, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:active .icon-bar, .main-navigation .navbar-toggle:focus .icon-bar {
   background-color: #E15E29;
 }
@@ -3868,10 +3899,20 @@ header .top p {
     font-size: 12px;
   }
 }
-/* line 22, sass/layout/_header.scss */
+/* line 21, sass/layout/_header.scss */
+header .top #site-navigation {
+  border-bottom: 1px solid #E9E9E9;
+}
+/* line 26, sass/layout/_header.scss */
 header .top a, header .top a:hover, header .top a:active, header .top a:focus {
   color: white;
   text-decoration: none;
+}
+
+/* line 34, sass/layout/_header.scss */
+.woocommerce-breadcrumb {
+  position: relative;
+  left: -14px;
 }
 
 /* line 1, sass/layout/_footer.scss */
@@ -3903,60 +3944,49 @@ footer #menu-footer-menu {
   text-transform: uppercase;
 }
 
-/* line 2, sass/layout/_product-grid.scss */
+/* line 3, sass/layout/_product-grid.scss */
+.referencial {
+  font-size: 14px;
+}
+
+/* line 11, sass/layout/_product-grid.scss */
 .product-grid h3 {
   font-size: 14px;
   min-height: 28px;
   margin: 20px 0 10px 0;
+  color: #000;
 }
-/* line 10, sass/layout/_product-grid.scss */
+/* line 18, sass/layout/_product-grid.scss */
+.product-grid p {
+  color: #000;
+}
+/* line 22, sass/layout/_product-grid.scss */
 .product-grid p.price {
   font-size: 12px;
 }
-/* line 13, sass/layout/_product-grid.scss */
+/* line 25, sass/layout/_product-grid.scss */
 .product-grid p.price .referencial {
   font-size: 10px;
 }
-/* line 22, sass/layout/_product-grid.scss */
+/* line 34, sass/layout/_product-grid.scss */
 .product-grid .wrapper {
   min-height: 220px;
 }
-/* line 26, sass/layout/_product-grid.scss */
+/* line 38, sass/layout/_product-grid.scss */
 .product-grid .item {
   margin-top: 25px;
+  height: 503px;
 }
 
-/* line 31, sass/layout/_product-grid.scss */
+/* line 45, sass/layout/_product-grid.scss */
 .woocommerce ul.products li.product h3 {
   font-size: 14px;
 }
 
-/* line 42, sass/layout/_product-grid.scss */
-.products p.price {
+/* line 51, sass/layout/_product-grid.scss */
+#related .price {
+  color: #000;
   font-size: 12px;
-}
-/* line 45, sass/layout/_product-grid.scss */
-.products p.price .referencial {
-  font-size: 10px;
-}
-/* line 54, sass/layout/_product-grid.scss */
-.products .wrapper {
-  min-height: 220px;
-}
-/* line 57, sass/layout/_product-grid.scss */
-.products .wrapper h3 {
-  font-size: 14px;
-  min-height: 28px;
-  margin: 20px 0 10px 0;
-  color: black;
-}
-/* line 65, sass/layout/_product-grid.scss */
-.products .item {
-  margin-top: 25px;
-}
-/* line 69, sass/layout/_product-grid.scss */
-.products a p, .products a h3, .products a:hover p, .products a:hover h3, .products a:focus p, .products a:focus h3, .products a:active p, .products a:active h3 {
-  color: black;
 }
 
 /* line 4, sass/pages/_contacto.scss */
@@ -3996,7 +4026,7 @@ footer #menu-footer-menu {
 
 /* line 3, sass/pages/_inicio.scss */
 .home #productos-nuevos {
-  margin-top: 75px;
+  margin-top: 0px;
 }
 /* line 8, sass/pages/_inicio.scss */
 .home h1 {
@@ -4011,9 +4041,12 @@ footer #menu-footer-menu {
     margin-bottom: 45px;
   }
 }
+/* line 19, sass/pages/_inicio.scss */
+.home #site-navigation {
+  margin-bottom: 50px;
+}
 
-/* line 1, sass/pages/_single-product.scss */
-.entry-summary {
-  position: relative;
-  top: 30%;
+/* line 3, sass/pages/_single-product.scss */
+.container.pagina-producto {
+  margin-top: 25px;
 }

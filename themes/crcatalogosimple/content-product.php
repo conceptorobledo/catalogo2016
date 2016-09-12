@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li class="item" <?php post_class(); ?>>
+<div class="col-md-3 item" <?php post_class(); ?>>
 
 	<div class="wrapper">
 	<?php
@@ -63,7 +63,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
 	?>
 	
-	</li>
+	</div>
 
 	<a href="<?php echo  get_the_permalink(); ?>" class="btn btn-primary">Más Información</a>
 

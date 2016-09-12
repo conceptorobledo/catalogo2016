@@ -18,6 +18,10 @@ header {
 			}
 		}
 
+		#site-navigation {
+				border-bottom: 1px solid $gris-claro;
+		}
+
 		a{
 			&,&:hover,&:active,&:focus {
 				color:$heroic-white;
@@ -25,4 +29,9 @@ header {
 			}
 		}
 	}
+}
+
+.woocommerce-breadcrumb {
+	position:relative;
+	left: -14px;
 }

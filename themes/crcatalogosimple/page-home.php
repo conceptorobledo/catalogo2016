@@ -90,7 +90,7 @@ get_header(); ?>
 								<div class="wrapper">
 		                            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
 		                             else 
-		                             	echo ' <a href="<?php echo  get_the_permalink(); ?>"><img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" /></a>'; ?>
+		                             	echo ' <a href="<?php echo  get_the_permalink(); ?>"><img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="265px" height="300px" /></a>'; ?>
 
 		                            <h3><?php the_title(); ?></h3>
 

@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<section class="product-grid">
 <div class="container">
 
 	<?php
@@ -35,6 +36,8 @@ get_header( 'shop' ); ?>
 	?>
 
 
+		<div class="row">
+
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
@@ -42,7 +45,8 @@ get_header( 'shop' ); ?>
 		<?php endif; ?>
 
 		
-
+		
+	
 		<?php
 			/**
 			 * woocommerce_archive_description hook.
@@ -55,7 +59,7 @@ get_header( 'shop' ); ?>
 
 
 
-
+		
 		<?php if ( have_posts() ) : ?>
 
 			<?php
@@ -68,15 +72,23 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 
+		</div><!--row-->
+
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
 
+				<div class="row">
+
 				<?php while ( have_posts() ) : the_post(); ?>
+
 
 					<?php wc_get_template_part( 'content', 'product' ); ?>
 
+
 				<?php endwhile; // end of the loop. ?>
+
+				</div><!--#row-->
 
 			<?php woocommerce_product_loop_end(); ?>
 
@@ -104,7 +116,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-
-	</div> <!-- container --> 
+</div><!--container-->
+</section>
 
 <?php get_footer( 'shop' ); ?>

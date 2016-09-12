@@ -17,9 +17,33 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+
+<script>
+
+	dataLayer = [];
+
+	<?php if ( is_product_category() ) : ?>
+		dataLayer.push( {‘pageCategory’: ‘<?php single_term_title(); ?>’});
+	<?php endif; ?>
+
+</script>
+
+
+
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CKBJN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5CKBJN');</script>
+<!-- End Google Tag Manager -->
+
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
@@ -36,7 +60,6 @@
 		</div><!--#container-->
 	</div><!--#top-->
 	
-	<div class="container">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 		
 			<!-- NAVBAR
@@ -45,6 +68,7 @@
 			<div class="navbar-wrapper" >
 				<div class="navbar navbar-inverse navbar-default" role="navigation">
 					<div class="container">
+						<div class="row">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle Navigation</span>
@@ -67,13 +91,12 @@
 						?>
 
 	
-
+						</div><!--#row-->
 					</div><!-- container-->
 
 				</div> <!-- navbar nav-->
 			</div><!-- navbar-wrapper -->
 		</nav><!-- #site-navigation -->
-		</div><!--#container -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
