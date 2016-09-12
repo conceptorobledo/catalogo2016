@@ -3653,19 +3653,25 @@ li {
 }
 /* line 91, sass/base/_globals.scss */
 .navbar-brand img {
-  max-width: 200px;
+  max-width: 150px;
+}
+@media (min-width: 768px) {
+  /* line 91, sass/base/_globals.scss */
+  .navbar-brand img {
+    max-width: 200px;
+  }
 }
 
-/* line 98, sass/base/_globals.scss */
+/* line 103, sass/base/_globals.scss */
 .valign-wrapper {
   margin: 40px 0;
 }
 @media (min-width: 768px) {
-  /* line 98, sass/base/_globals.scss */
+  /* line 103, sass/base/_globals.scss */
   .valign-wrapper {
     height: 400px;
   }
-  /* line 104, sass/base/_globals.scss */
+  /* line 109, sass/base/_globals.scss */
   .valign-wrapper .valign {
     position: absolute;
     top: 8%;
@@ -3724,37 +3730,37 @@ li {
   width: 200px;
 }
 
-/* line 58, sass/navigation/_nav.scss */
+/* line 43, sass/navigation/_nav.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
 
-/* line 63, sass/navigation/_nav.scss */
+/* line 48, sass/navigation/_nav.scss */
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
 
 /* Small menu. */
-/* line 75, sass/navigation/_nav.scss */
+/* line 60, sass/navigation/_nav.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 81, sass/navigation/_nav.scss */
+  /* line 66, sass/navigation/_nav.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 84, sass/navigation/_nav.scss */
+  /* line 69, sass/navigation/_nav.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 89, sass/navigation/_nav.scss */
+/* line 74, sass/navigation/_nav.scss */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -3762,7 +3768,7 @@ li {
   overflow: hidden;
 }
 
-/* line 96, sass/navigation/_nav.scss */
+/* line 81, sass/navigation/_nav.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
@@ -3770,7 +3776,7 @@ li {
   width: 50%;
 }
 
-/* line 103, sass/navigation/_nav.scss */
+/* line 88, sass/navigation/_nav.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3779,33 +3785,33 @@ li {
   width: 50%;
 }
 
-/* line 114, sass/navigation/_nav.scss */
+/* line 99, sass/navigation/_nav.scss */
 .navbar {
   z-index: 50;
   border: 0;
   min-height: 90px;
 }
-/* line 120, sass/navigation/_nav.scss */
+/* line 105, sass/navigation/_nav.scss */
 .navbar-toggle {
   border: 0;
 }
-/* line 129, sass/navigation/_nav.scss */
+/* line 114, sass/navigation/_nav.scss */
 .navbar > .container {
   padding-top: 20px;
 }
 
-/* line 137, sass/navigation/_nav.scss */
+/* line 122, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse {
   background-color: transparent;
 }
-/* line 143, sass/navigation/_nav.scss */
+/* line 128, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #0099A7;
   font-size: 0.8em;
 }
-/* line 148, sass/navigation/_nav.scss */
+/* line 133, sass/navigation/_nav.scss */
 .main-navigation .navbar-inverse .navbar-nav > li > a:hover {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -3815,21 +3821,21 @@ li {
   background-color: #0099A7;
   color: white;
 }
-/* line 164, sass/navigation/_nav.scss */
+/* line 149, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle .icon-bar {
   width: 42px;
   height: 8px;
   background-color: #0099A7;
 }
-/* line 170, sass/navigation/_nav.scss */
+/* line 155, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:hover {
   background-color: transparent;
 }
-/* line 174, sass/navigation/_nav.scss */
+/* line 159, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:active, .main-navigation .navbar-toggle:focus {
   background-color: transparent;
 }
-/* line 178, sass/navigation/_nav.scss */
+/* line 163, sass/navigation/_nav.scss */
 .main-navigation .navbar-toggle:active .icon-bar, .main-navigation .navbar-toggle:focus .icon-bar {
   background-color: #E15E29;
 }
@@ -3843,14 +3849,26 @@ header {
 header .top {
   color: white;
   background-color: #E15E29;
-  height: 35px;
+  height: 95px;
 }
-/* line 9, sass/layout/_header.scss */
+@media (min-width: 768px) {
+  /* line 5, sass/layout/_header.scss */
+  header .top {
+    height: 35px;
+  }
+}
+/* line 13, sass/layout/_header.scss */
 header .top p {
   text-transform: uppercase;
   padding: 6px 0;
 }
-/* line 15, sass/layout/_header.scss */
+@media (max-height: 768px) {
+  /* line 13, sass/layout/_header.scss */
+  header .top p {
+    font-size: 12px;
+  }
+}
+/* line 22, sass/layout/_header.scss */
 header .top a, header .top a:hover, header .top a:active, header .top a:focus {
   color: white;
   text-decoration: none;
@@ -3885,10 +3903,6 @@ footer #menu-footer-menu {
   text-transform: uppercase;
 }
 
-/* line 1, sass/layout/_product-grid.scss */
-.product-grid {
-  margin-top: 68px;
-}
 /* line 2, sass/layout/_product-grid.scss */
 .product-grid h3 {
   font-size: 14px;
@@ -3903,18 +3917,46 @@ footer #menu-footer-menu {
 .product-grid p.price .referencial {
   font-size: 10px;
 }
-/* line 23, sass/layout/_product-grid.scss */
+/* line 22, sass/layout/_product-grid.scss */
 .product-grid .wrapper {
   min-height: 220px;
 }
-/* line 27, sass/layout/_product-grid.scss */
+/* line 26, sass/layout/_product-grid.scss */
 .product-grid .item {
   margin-top: 25px;
 }
 
-/* line 32, sass/layout/_product-grid.scss */
+/* line 31, sass/layout/_product-grid.scss */
 .woocommerce ul.products li.product h3 {
   font-size: 14px;
+}
+
+/* line 42, sass/layout/_product-grid.scss */
+.products p.price {
+  font-size: 12px;
+}
+/* line 45, sass/layout/_product-grid.scss */
+.products p.price .referencial {
+  font-size: 10px;
+}
+/* line 54, sass/layout/_product-grid.scss */
+.products .wrapper {
+  min-height: 220px;
+}
+/* line 57, sass/layout/_product-grid.scss */
+.products .wrapper h3 {
+  font-size: 14px;
+  min-height: 28px;
+  margin: 20px 0 10px 0;
+  color: black;
+}
+/* line 65, sass/layout/_product-grid.scss */
+.products .item {
+  margin-top: 25px;
+}
+/* line 69, sass/layout/_product-grid.scss */
+.products a p, .products a h3, .products a:hover p, .products a:hover h3, .products a:focus p, .products a:focus h3, .products a:active p, .products a:active h3 {
+  color: black;
 }
 
 /* line 4, sass/pages/_contacto.scss */
@@ -3952,7 +3994,11 @@ footer #menu-footer-menu {
   background-color: #222222;
 }
 
-/* line 2, sass/pages/_inicio.scss */
+/* line 3, sass/pages/_inicio.scss */
+.home #productos-nuevos {
+  margin-top: 75px;
+}
+/* line 8, sass/pages/_inicio.scss */
 .home h1 {
   font-size: 45px;
   font-weight: 700;
@@ -3960,8 +4006,14 @@ footer #menu-footer-menu {
   margin: 5px 5px 15px 5px;
 }
 @media (min-width: 768px) {
-  /* line 2, sass/pages/_inicio.scss */
+  /* line 8, sass/pages/_inicio.scss */
   .home h1 {
     margin-bottom: 45px;
   }
+}
+
+/* line 1, sass/pages/_single-product.scss */
+.entry-summary {
+  position: relative;
+  top: 30%;
 }

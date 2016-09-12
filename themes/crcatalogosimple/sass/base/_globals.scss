@@ -89,7 +89,12 @@ li {
 .navbar-brand {
 	padding: 5px 5px;
 	img {
+
+		max-width:150px;
+
+		@media(min-width:$pantalla-media){
 		max-width: 200px;
+		}
 	}
 }
 

@@ -18,7 +18,6 @@
 
 
 
-	margin-top: 68px;
 
 	.wrapper {
 		min-height: 220px;
@@ -32,3 +31,44 @@
 .woocommerce ul.products li.product h3 {
 	font-size:14px;
 }
+
+//PROVISIONAL, ARREGLAR WOOCOMMERCE
+
+.products {
+	
+
+	p {
+
+		&.price {
+			font-size:12px;
+
+			.referencial {
+				font-size:10px;
+			}
+		}
+	}
+
+
+
+
+	.wrapper {
+		min-height: 220px;
+
+		h3 {
+		font-size: 14px;
+		min-height: 28px;
+		margin: 20px 0 10px 0;
+		color:black;
+		}
+	}
+
+	.item {
+		margin-top:25px;
+	}
+	a,a:hover,a:focus,a:active {
+		p,h3 {
+			color:black;
+		}
+	}
+}
+

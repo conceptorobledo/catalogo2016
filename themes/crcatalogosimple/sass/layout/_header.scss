@@ -5,10 +5,17 @@ header {
 	.top {
 		color:$heroic-white;
 		background-color:$naranjo-financoop;
-		height:35px;
+		height:95px;
+
+		@media(min-width:$pantalla-media) {
+			height:35px;
+		}
 		p {
 			text-transform: uppercase;
 			padding: 6px 0;
+			@media (max-height:$pantalla-media) {
+				font-size:12px;
+			}
 		}
 
 		a{

@@ -27,7 +27,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php post_class(); ?>>
+<li class="item" <?php post_class(); ?>>
+
+	<div class="wrapper">
 	<?php
 	/**
 	 * woocommerce_before_shop_loop_item hook.
@@ -60,7 +62,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	do_action( 'woocommerce_after_shop_loop_item_title' );
 
 	?>
+	
+	</li>
 
 	<a href="<?php echo  get_the_permalink(); ?>" class="btn btn-primary">Más Información</a>
 
-</li>
+</div>
