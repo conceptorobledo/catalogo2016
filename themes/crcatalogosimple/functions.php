@@ -135,12 +135,23 @@ function crcatalogosimple_scripts() {
 add_action( 'wp_enqueue_scripts', 'crcatalogosimple_scripts' );
 
 
+
 /*
-* Añade Descripciones cortas a WooCommerce (Plugin descripcion-corta-commerce) ###NOFUNCIONA
+* Añade get_skU() para extraer sku
 */
 
-add_action( 'woocommerce_after_shop_loop_item_title', 'conceptocommerce_extracto_archivos_producto', 40 );
 
+/* 
+* Invierte orden de precios Woocommerce
+*/
+add_filter('woocommerce_sale_price_html', 'wdm_change_price_text', 10, 2);
+
+function wdm_change_price_text( $price, $this_object ) {
+    $display_price       = $this_object->get_display_price();
+    $display_regular_price   = $this_object->get_display_price($this_object->get_regular_price());
+    $price='<ins>' . wc_price($display_price) . '</ins>' . $this_object->get_price_suffix() . '<del>' . wc_price($display_regular_price) . '</del> ';
+    return $price;
+}
 
 /*
 * Remueve boton ADD TO CART 

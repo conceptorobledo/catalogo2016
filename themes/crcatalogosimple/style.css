@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme Name: ConceptoRobledo Catalogo Simple
+Theme Name: ConceptoRobledo Catalogo Simple v1.0
 Theme Description: Catalogo Sencillo sin carro de compras.
 */
 /*!
@@ -3960,33 +3960,34 @@ footer #menu-footer-menu {
 .product-grid p {
   color: #000;
 }
-/* line 22, sass/layout/_product-grid.scss */
-.product-grid p.price {
+/* line 24, sass/layout/_product-grid.scss */
+.product-grid p.price ins {
+  text-decoration: none;
+  margin-right: 9px;
+}
+/* line 27, sass/layout/_product-grid.scss */
+.product-grid p.price .referencial {
   font-size: 12px;
 }
-/* line 25, sass/layout/_product-grid.scss */
-.product-grid p.price .referencial {
-  font-size: 10px;
-}
-/* line 34, sass/layout/_product-grid.scss */
+/* line 36, sass/layout/_product-grid.scss */
 .product-grid .wrapper {
   min-height: 220px;
 }
-/* line 38, sass/layout/_product-grid.scss */
+/* line 40, sass/layout/_product-grid.scss */
 .product-grid .item {
   margin-top: 25px;
   height: 503px;
 }
 
-/* line 45, sass/layout/_product-grid.scss */
+/* line 47, sass/layout/_product-grid.scss */
 .woocommerce ul.products li.product h3 {
   font-size: 14px;
 }
 
-/* line 51, sass/layout/_product-grid.scss */
+/* line 53, sass/layout/_product-grid.scss */
 #related .price {
   color: #000;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* line 4, sass/pages/_contacto.scss */
@@ -4049,4 +4050,14 @@ footer #menu-footer-menu {
 /* line 3, sass/pages/_single-product.scss */
 .container.pagina-producto {
   margin-top: 25px;
+}
+/* line 10, sass/pages/_single-product.scss */
+.container.pagina-producto p.price ins {
+  text-decoration: none;
+  margin-right: 9px;
+}
+/* line 13, sass/pages/_single-product.scss */
+.container.pagina-producto p.price .referencial {
+  font-size: 14px;
+  color: #000;
 }

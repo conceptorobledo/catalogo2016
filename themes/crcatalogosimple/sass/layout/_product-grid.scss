@@ -20,10 +20,12 @@
 		
 		color:$black;
 		&.price {
-			font-size:12px;
+
+			ins {text-decoration: none; margin-right:9px;}
+			
 
 			.referencial {
-				font-size:10px;
+				font-size:12px;
 			}
 		}
 	}
@@ -50,5 +52,5 @@
 
 #related .price {
 	color:$black;
-	font-size:12px;
+	font-size:16px;
 }

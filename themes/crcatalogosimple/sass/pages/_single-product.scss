@@ -2,4 +2,19 @@
 
 .container.pagina-producto {
 	margin-top: 25px;
+
+	p {
+
+			&.price {
+
+			ins {text-decoration: none; margin-right:9px;}
+			
+
+			.referencial {
+				font-size:14px;
+				color:$black;
+
+			}
+		}
+	}
 }
