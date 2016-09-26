@@ -1,0 +1,117 @@
+body {
+	font-family: $font-body;
+	font-size: 16px;
+	//background: url('wp-content/themes/kubicoparallax/img/tile.jpg') top left repeat;
+}
+
+
+//Fix para cuando entra en modo administrador 
+
+.logged-in {
+	.navbar-fixed-top {top:32px;}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizelegibility;
+	font-weight:bold;
+	font-family: $font-header;
+}
+
+h1 {
+	font-size:2.7em;
+	text-transform: uppercase;
+	font-weight:300;
+}
+
+h1,h2 {
+	margin: 0 0 30px;
+}
+
+h2 {
+	margin-bottom: 15px;
+	font-weight: 300;
+	@media only screen and (max-width:$pantalla-cel) {
+			margin-bottom:10px;
+		}
+}
+
+h3{
+	margin: 20px 0;
+}
+
+
+
+h4 {
+	font-size:18px;
+}
+
+p {
+	margin:0 0 15px;
+	.lead {
+		font-weight: normal;
+	}
+}
+a {
+
+	&:link,&:visited {
+	
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing:antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+
+}
+
+
+img {
+	max-width:100%;
+}
+
+li {
+	list-style:none;
+	display:block;
+}
+
+.section-header {
+	text-align:center;
+} 
+
+//Logo
+.navbar-brand {
+	padding: 5px 5px;
+
+	img {
+
+		max-width:150px;
+
+		@media(min-width:$pantalla-media){
+		max-width: 200px;
+		position:relative;
+		top: -10px;
+		}
+	}
+}
+
+
+//Alínea verticalmente
+.valign-wrapper {
+	margin: 40px 0;
+	@media (min-width:$pantalla-media){
+
+		height: 400px;
+
+			.valign {
+				position:absolute;
+				top:8%;
+			}
+		}
+	}

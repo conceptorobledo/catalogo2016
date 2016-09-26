@@ -25,9 +25,17 @@
 	<?php if ( is_product_category() ) : ?>
 		dataLayer.push( {'categoria-pagina': '<?php single_term_title(); ?>'});
 	<?php endif; ?>
+
+	<?php if ( is_home()) : ?>
+				dataLayer.push( {'categoria-pagina': 'home'});
+	<?php endif;?>
+
 	<?php if ( is_product() ) : ?>
+
+
 		dataLayer.push( {
-			'nombre-producto':'<?php the_title();?>'
+			'nombre-producto':'<?php the_title();?>',
+			'categoria-pagina': 'single-product'
 		});
 
 	<?php endif; ?>

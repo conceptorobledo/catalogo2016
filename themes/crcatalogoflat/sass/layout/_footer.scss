@@ -1,0 +1,18 @@
+footer {
+	margin-top: 60px;
+	background-color: $gris-oscuro;
+
+	a,p{
+		color:$heroic-white;
+	}
+
+	#menu-footer-menu {
+		padding: 20px 0;
+	}
+	
+	@media (min-width:$pantalla-media){
+		.nav>li>a:hover{
+			background-color: transparent;
+		}
+	}
+}

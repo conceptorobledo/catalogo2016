@@ -34,7 +34,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 	echo get_the_password_form();
 	 	return;
 	 }
+
+	 global $product;
 ?>
+
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -42,6 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<div class="row">
 			<div class="col-md-8 col-md-push-2">
+
 			<?php
 				/**
 				 * woocommerce_before_single_product_summary hook.
@@ -70,6 +74,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 						do_action( 'woocommerce_single_product_summary' );
 					?>
 
+					
+
 				</div><!-- .summary -->
 			</div> <!-- #col -->
 		</div> <!-- #row -->
@@ -95,5 +101,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</section>
 		<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
+
+
 </div><!-- #product-<?php the_ID(); ?> -->
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+
+

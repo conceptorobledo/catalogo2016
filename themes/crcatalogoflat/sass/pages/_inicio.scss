@@ -1,0 +1,22 @@
+.home {
+
+	#productos-nuevos {
+		margin-top:0px;
+		
+	}
+
+	h1 {
+		font-size: 45px;
+		font-weight: 700;
+		color: $naranjo-financoop;
+		margin: 5px 5px 15px 5px;
+
+		@media(min-width:$pantalla-media){
+			margin-bottom:45px;
+		}
+	}
+
+	#site-navigation {
+		margin-bottom: 50px;
+	}
+}

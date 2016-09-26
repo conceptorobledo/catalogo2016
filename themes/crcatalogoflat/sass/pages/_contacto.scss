@@ -1,0 +1,36 @@
+
+#form-contacto {
+
+	h1 {
+		font-size: 2.3em;
+		margin-bottom: 10px;
+	}
+	.contact-form {
+		padding: 20px 0;
+		@media (min-width:$pantalla-media) {
+		padding: 35px 60px;
+		@include border-radius(40px);
+		}
+		margin-bottom: 30px;
+	}
+	
+	.social li {
+		display: inline;
+		font-size: 28px;
+		margin-right: 7px;
+	}
+
+	li {
+		margin: 26px 0;
+	}
+
+	
+	
+
+
+}
+
+.page-template-page-contacto {
+	background-color: #222222;
+}
+

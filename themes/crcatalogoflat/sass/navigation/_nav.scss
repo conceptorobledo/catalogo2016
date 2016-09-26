@@ -1,0 +1,190 @@
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid $gris-claro;
+	margin-bottom:15px;
+}
+
+
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px  rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	margin-top:10px;
+	text-aling:center;
+	top: 2.8em;
+	left: -999em;
+	z-index: 99999;
+	background: white;
+	border-right:none !important;
+	font-size:0.8em;
+
+	.menu-item {
+	min-width:100px;
+	padding: 8px;
+	a {
+	color:grey;
+	text-decoration:none;
+	}
+}
+.menu-item:hover {
+	background-color: $celeste-financoop;
+		a {
+	color:white;
+	}
+}
+
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	min-width: 170px;
+}
+
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+
+	width: 50%;
+}
+
+//Bootstrap Navbar Styling
+
+.navbar {
+	z-index:50;//Se aplica z-index para qué la background img del html no cubra el menu
+
+	border: 0;
+
+	//Boton de Toggle
+	&-toggle {
+		border: 0;
+		&.icon-bar {
+			
+		}
+	}
+
+	min-height:90px;
+
+	&>.container {
+
+		padding-top:20px;
+
+	}
+}
+
+.main-navigation{
+	.navbar-inverse{
+		background-color: rgba(0,0,0,0);
+
+		.navbar-nav>li{
+
+
+				&>a {
+					font-family: $font-header;
+					text-transform: uppercase;
+					color: $celeste-financoop;
+					font-size: 0.8em;
+					&:hover {
+						
+
+						@include transition(0.5s);
+						background-color:$celeste-financoop;
+						color:$heroic-white;
+
+						}
+					}
+		}
+	}
+
+	.navbar-toggle {
+
+
+
+		.icon-bar {
+		width:42px;
+		height:8px;	
+		background-color:$celeste-financoop;
+		}
+
+		&:hover {
+			background-color:rgba(0,0,0,0);
+		}
+
+		&:active,&:focus {
+
+			background-color:rgba(0,0,0,0);
+
+			.icon-bar {
+				background-color:$naranjo-financoop;
+			}
+		}
+	}
+
+}
